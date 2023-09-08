@@ -54,6 +54,14 @@ jobs:
           sudo apt install -y \
                     build-essential \
                     cmake \
+                    libfftw3-dev \
+                    libmbedtls-dev \
+                    libpcsclite-dev \
+                    libboost-program-options-dev \
+                    libconfig++-dev \
+                    libsctp-dev \
+                    libuhd-dev \
+                    libzmq3-dev
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v2
