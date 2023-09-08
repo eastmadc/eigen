@@ -81,8 +81,9 @@ jobs:
     - run: |
         echo "Run, Build Application using script"
         mkdir builddir
+        mkdir installdir
         cd builddir
-        cmake ../
+        cmake ../ -DINCLUDE_INSTALL_DIR=../installdir
         make install
         
 
