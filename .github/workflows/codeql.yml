@@ -83,7 +83,7 @@ jobs:
         mkdir builddir
         mkdir installdir
         cd builddir
-        cmake ../ -DINCLUDE_INSTALL_DIR=../installdir
+        cmake ../ -DCMAKE_INSTALL_PREFIX=../ -DINCLUDE_INSTALL_DIR=installdir
         make install
         
 
