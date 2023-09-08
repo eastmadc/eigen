@@ -80,7 +80,9 @@ jobs:
 
     - run: |
         echo "Run, Build Application using script"
-        cmake .
+        mkdir builddir
+        cd builddir
+        cmake ../
         make install
         
 
